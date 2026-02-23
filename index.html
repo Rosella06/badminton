@@ -1,15 +1,34 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="th">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-badminton-app</title>
+    
+    <!-- เปลี่ยนไอคอนบนแท็บ Browser (Favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏸</text></svg>">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" />
+    
+    <!-- ชื่อที่จะปรากฏบนแถบเว็บและเวลาส่งลิงก์ -->
+    <title>Badminton Pro Scoreboard</title>
+    <meta name="description" content="เครื่องมือนับคะแนนแบดมินตันมืออาชีพ รองรับ 11, 15, 21 แต้ม" />
+
+    <!-- Open Graph (สำหรับ Facebook, Line, Messenger) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zxczxcasd.vercel.app/" />
+    <meta property="og:title" content="Badminton Pro Scoreboard" />
+    <meta property="og:description" content="กดยับ นับแม่น สลับฝั่งได้ รองรับ iPad และมือถือ" />
+    <meta property="og:image" content="https://zxczxcasd.vercel.app/og-image.jpg" /> <!-- ถ้ามีรูปภาพตัวอย่างให้ใส่ตรงนี้ -->
+
+    <style>
+      /* ป้องกันขอบขาวแน่นอน 100% */
+      html, body, #root {
+        margin: 0; padding: 0; width: 100%; height: 100%;
+        overflow: hidden; background-color: #0a0a0c;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-<!-- ป้องกันไม่ให้หน้าจอขยับหรือซูมเวลาเรากดย้ำๆ (Double Tap) เพื่อเพิ่มคะแนน -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
